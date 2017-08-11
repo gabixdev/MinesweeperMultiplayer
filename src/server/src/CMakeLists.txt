@@ -1,3 +1,7 @@
+# Check platform
+include(${MSMP_FUNCTIONS}/check_platform.cmake)
+check_platform()
+
 # Include shared headers
 include_directories(${MSMP_SHARED_INCLUDES_ALL})
 

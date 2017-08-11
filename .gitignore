@@ -1,3 +1,5 @@
 .idea/
 runtime/
-cmake-build-debug
+cmake-build-*
+bin/*
+!/bin/.gitkeep

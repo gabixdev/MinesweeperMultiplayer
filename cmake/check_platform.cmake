@@ -1,0 +1,11 @@
+function(check_platform)
+    if (WIN32)
+        add_definitions(-DMSMP_WIN)
+        set(MSMP_PLATFORM "Win" CACHE INTERNAL "")
+    endif (WIN32)
+
+    if (UNIX)
+        add_definitions(-DMSMP_UNIX)
+        set(MSMP_PLATFORM "Unix" CACHE INTERNAL "")
+    endif (UNIX)
+endfunction()

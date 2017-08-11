@@ -1,3 +1,7 @@
+# Check platform
+include(${MSMP_FUNCTIONS}/check_platform.cmake)
+check_platform()
+
 # Config file
 configure_file(
         "${CMAKE_CURRENT_SOURCE_DIR}/shared/shared_config.hpp.in"
@@ -18,6 +22,9 @@ set(
         MSMP_SHARED_INCLUDES_ALL
 
         ${MSMP_SHARED_INCLUDES}
+        ${MSMP_SHARED_LIB_INCLUDES}
 
         CACHE INTERNAL "MSMP Shared Project + Libraries Includes"
 )
+
+include_directories(${MSMP_SHARED_INCLUDES_ALL})

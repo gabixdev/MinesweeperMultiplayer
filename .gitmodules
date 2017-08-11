@@ -1,0 +1,6 @@
+[submodule "src/shared/lib/spdlog"]
+	path = src/shared/lib/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "src/client/lib/SDL-mirror"]
+	path = src/client/lib/sdl
+	url = https://github.com/spurious/SDL-mirror
